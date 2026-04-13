@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="FlatBrutal.Docs/FlatBrutal.Docs.csproj" />
+  <Project Path="FlatBrutal.Ui/FlatBrutal.Ui.csproj" />
+</Solution>

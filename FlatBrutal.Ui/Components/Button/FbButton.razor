@@ -1,0 +1,16 @@
+<button
+    class="@CssClass"
+    disabled="@Disabled"
+    aria-busy="@Loading"
+    @onclick="@HandleClick"
+    @attributes="AdditionalAttributes">
+
+    @if (!Loading)
+    {
+        @ChildContent
+    }
+    else
+    {
+        <span>Cargando...</span>
+    }
+</button>

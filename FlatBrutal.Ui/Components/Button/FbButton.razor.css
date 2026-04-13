@@ -1,0 +1,53 @@
+.fb-btn {
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+/* Hover */
+.fb-btn:hover {
+    background: var(--card-bg);
+}
+
+/* Variants */
+.fb-btn.primary {
+    background: var(--primary);
+    color: var(--on-primary);
+}
+
+.fb-btn.primary:hover {
+    background: transparent;
+    color: var(--primary);
+}
+
+.fb-btn.success {
+    background: var(--success);
+    color: var(--on-success);
+}
+
+.fb-btn.success:hover {
+    background: transparent;
+    color: var(--success);
+}
+
+.fb-btn.danger {
+    background: var(--danger);
+    color: var(--on-danger);
+}
+
+.fb-btn.danger:hover {
+    background: transparent;
+    color: var(--danger);
+}
+
+/* Disabled */
+.fb-btn:disabled {
+    cursor: not-allowed;
+    background: var(--surface);
+    opacity: 0.6;
+}
