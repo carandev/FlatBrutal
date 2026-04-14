@@ -1,12 +1,28 @@
 ﻿@page "/"
 @using FlatBrutal.Ui.Styling
+@rendermode InteractiveServer
 
 <PageTitle>Home</PageTitle>
-
-<h1>Hello, world!</h1>
 
 <FbButton
   Variant="@FbButtonVariant.Danger"
   OnClick="@(() => Console.WriteLine("HOlaa"))">
   Mi botón
+</FbButton>
+
+<FbButton
+  Variant="@FbButtonVariant.Success"
+  OnClick="@(() => Console.WriteLine("HOlaa"))">
+  Mi botón 2
+</FbButton>
+
+<FbButton
+  Variant="@FbButtonVariant.Primary"
+  OnClick="@(() => Console.WriteLine("HOlaa"))">
+  Mi botón 3
+</FbButton>
+
+<FbButton
+  OnClick="@(() => Console.WriteLine("HOlaa"))">
+  Mi botón 4
 </FbButton>

@@ -10,7 +10,7 @@ public partial class FbButton : ComponentBase
     [Parameter] public RenderFragment? StartContent { get; set; }
     [Parameter] public RenderFragment? EndContent { get; set; }
 
-    [Parameter] public FbButtonVariant Variant { get; set; } = FbButtonVariant.Primary;
+    [Parameter] public FbButtonVariant? Variant { get; set; }
 
     [Parameter] public bool Disabled { get; set; }
     [Parameter] public bool Loading { get; set; }
@@ -26,7 +26,7 @@ public partial class FbButton : ComponentBase
 
     private string CssClass => FbClassBuilder
         .Create("fb-btn")
-        .Add($"{Variant.ToString().ToLowerInvariant()}")
+        .Add($"{Variant?.ToString().ToLowerInvariant()}")
         .Add(Class)
         .ToString();
 
